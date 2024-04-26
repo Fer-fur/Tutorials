@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="textShadow">Welcome to Rock Paper Scissor!</h1>
+    <img id="logo" src="Images/rock-paper-scissors.png" alt="cartoon picture of rock paper scissor hand signs">
+    <div id="choice-container">
+        <h2 class="textShadow">Please make your choice</h2>
+        <div id="button-container">
+            <div class="choice-btn" data-value="0">
+                <img class="choice-img" src="Images/rocks.png" alt="cartoon image of a rock icon" >
+                <p>Rock</p>
+            </div>
+            <div class="choice-btn" data-value="1">
+                <img class="choice-img" src="Images/paper.png" alt="cartoon image of a paper icon" >
+                <p>Paper</p>
+            </div>
+            <div class="choice-btn" data-value="2">
+                <img class="choice-img" src="Images/scissors.png" alt="cartoon image of a scissors icon">
+                <p>Scissor</p>
+            </div>
+            <!-- <button onclick="getPlayerChoice(this)" value=0>Rock</button>
+            <button onclick="getPlayerChoice(this)" value=1>Paper</button>
+            <button onclick="getPlayerChoice(this)" value=2>Scissor</button> -->
+        </div>
+        <p id="choice-title">You have chosen: <span id="choice"></span></p>
+        <p id="error-text"></p>
+        <button id="challenge-btn" onclick="showResults()">Challenge!</button>
+    </div>
+    <div id="results-container">
+        <div id="results-container-title">
+            <h3>Results:</h3>
+            <p id="computerChoice"></p>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <h2>Icon Credits</h2>
+    <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Freepik - Flaticon</a>
+</body>
+<script src="script.js"></script>
+</html>
