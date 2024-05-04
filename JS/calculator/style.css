@@ -1,0 +1,72 @@
+body {
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#calculatorContainer {
+    background-color: black;
+    border-radius: 12px;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.25em;
+}
+
+#calculatorScreen {
+    background-color: rgb(46, 49, 49);
+    width: 100%;
+    height: 4.5em;
+    color: rgb(23, 207, 23);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#calculatorScreenText {
+    margin: 0 0.1em;
+    font-size: 4em;
+}
+
+.calculatorBtnContainer {
+    display: flex;
+    gap: 0.5em;
+    margin: 0.5em 0;
+}
+
+.calculatorBtn {
+    width: 4em;
+    height: 4em;
+    background-color: rgb(83, 82, 82);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.calculatorBtn:hover {
+    background-color: rgb(175, 174, 174);
+}
+
+#btn0, #deleteBtn {
+    flex:2;
+    border-radius: 1em;
+}
+
+#deleteBtn {
+    background-color: rgb(121, 13, 13);
+    color: white;
+}
+
+#deleteBtn:hover{
+    background-color: rgb(207, 25, 25);
+}
