@@ -45,9 +45,11 @@ function resetValues(){
     decimalIsPressed = false;
 }
 
-for(let i = 0; i < numBtn.length; i++) {
-    numBtn[i].addEventListener('click',(e) => numBtnPressed(e))
-}
+
+numBtn.forEach((btn) => 
+    btn.addEventListener('click',(e) => numBtnPressed(e))
+)
+
 
 cancelBtn.addEventListener("click", () => {
     // clears the screen, reset all values and states
@@ -56,16 +58,16 @@ cancelBtn.addEventListener("click", () => {
 })
 
 
-for(let i = 0; i < operatorBtn.length; i++){
-    operatorBtn[i].addEventListener("click", (e) => {
+operatorBtn.forEach((btn) => 
+    btn.addEventListener("click", (e) => {
         // shows operator selected on screen and allows screen to be cleared on the next number button pressed 
         // reallow decimal btn to be pressed
         operator=e.target.textContent;
         calculatorScreen.textContent = e.target.textContent;
         needToClearScreen = true;
         decimalIsPressed = false;
-    })
-}
+    }
+))
 
 eqlBtn.addEventListener("click", () => {
     if(operator != "") {
@@ -80,7 +82,6 @@ eqlBtn.addEventListener("click", () => {
         preNum = String(output);
         operator = "";
         curNum = "";
-        needToClearScreen = true;
     }
 })
 
