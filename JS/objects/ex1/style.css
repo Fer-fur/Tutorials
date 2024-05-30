@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main { 
+    background-color: #ccc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxShadow {
+    box-shadow: 5px 5px 5px -5px black;
+}
+
+.addBookForm {
+    background-color: white;
+    padding: 20px 40px;
+    width: 80%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #999;
+}
+
+button {
+    padding: 18px;
+    grid-column: 1/5;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.25em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:lightgreen;
+}
+
+.booksCardSection {
+    background-color: white;
+    width: 80%;
+    border-radius: 25px;
+    text-align: center;
+    min-height: 36em;
+    height: auto;
+    padding: 24px;
+}
+
+#booksCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    width: 100%;
+    gap: 24px;
+    padding: 18px;
+}
+
+.bookCard {
+    background-color: #eeebeb;
+    max-width: 16em;
+    min-width: 10em;
+    border-radius: 8px;
+    padding: 24px 12px;
+    font-size: 1.25em;
+    flex: 1;
+}
+
+.bookTitle {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.bookTitle+p {
+    font-style: italic;
+
+}

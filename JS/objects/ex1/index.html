@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>  
+        <div class="addBookForm boxShadow">
+
+            <label for="bookTitle">Book Title: </label>
+            <input type="text" name="bookTitle" id="bookTitle">
+        
+            <label for="bookAuthor">Book Author: </label>
+            <input type="text" name="bookAuthor" id="bookAuthor">
+
+            <label for="bookPages">Number of Pages: </label>
+            <input type="number" name="bookPages" id="bookPages">
+
+            <label for="bookStatus">Reading Status: </label>
+            <input type="text" name="bookStatus" id="bookStatus">
+        
+            <button id="addNewBookBtn" type="button" class="boxShadow">Add New Book</button>
+
+        </div>
+    
+        <div class="booksCardSection boxShadow">
+            <h2>Books</h2>
+            <div id="booksCardsContainer">
+                
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
