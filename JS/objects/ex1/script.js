@@ -5,7 +5,8 @@ function Book(title, author, pages, status) {
     this.author = author;
     this.pages = pages;
     this.status = status;
-    this.info = function() {
+    this.info = () => {
+        console.log(this);
         return (`${this.title} by ${this.author}, ${this.pages} pages, ${this.status}`)
     }
 }
@@ -21,30 +22,22 @@ addBookToLibrary("The Hobbit", "J.R.R Tolkien" , 295, "not read yet");
 
 
 function createBookCard(book){
+
+    function generatePEl(content, className = '') {
+        const p = document.createElement("p");
+        p.textContent = content;
+        if (className) p.className = className;
+        return p
+    }
+
     const bookCard = document.createElement("div");
-    bookCard.classList = "boxShadow bookCard";
+    bookCard.classList.add("boxShadow", "bookCard");
 
-    const bookTitle = document.createElement("p");
-    bookTitle.textContent = book.title;
-    bookTitle.className = "bookTitle";
-
-    const by = document.createElement("p");
-    by.textContent = "by";
-
-    const bookAuthor = document.createElement("p");
-    bookAuthor.textContent = book.author;
-
-    const bookPages = document.createElement("p");
-    bookPages.textContent = book.pages + " pages";
-
-    const bookStatus = document.createElement("p");
-    bookStatus.textContent = "Reading Status: " + book.status;
-
-    bookCard.appendChild(bookTitle);
-    bookCard.appendChild(by);
-    bookCard.appendChild(bookAuthor);
-    bookCard.appendChild(bookPages);
-    bookCard.appendChild(bookStatus);
+    bookCard.appendChild(generatePEl(book.title, 'bookTitle'));
+    bookCard.appendChild(generatePEl('by'));
+    bookCard.appendChild(generatePEl(book.author));
+    bookCard.appendChild(generatePEl(`${book.pages} pages`));
+    bookCard.appendChild(generatePEl(`Reading Status: ${book.status}`));
 
     return bookCard;
 }
