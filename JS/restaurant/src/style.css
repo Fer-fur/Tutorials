@@ -1,0 +1,34 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 80%;
+    margin: 24px auto;
+    background-color: #999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.topContainer {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
