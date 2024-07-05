@@ -1,12 +1,29 @@
-import './App.css';
-import { PersonScore } from './PersonScore';
+import { Outlet, createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import { Header } from "./Header";
+import { ContactPage } from "./ContactPage";
+import { ThankYouPage } from "./ThankYouPage";
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Navigate to="contact" />
+  },
+  {
+    path: '/contact',
+    element: <ContactPage />
+  },
+  {
+    path: '/thank-you/:name',
+    element: <ThankYouPage />
+  }
+]);
+
+export default function App() {
   return (
-    <div className="App">
-      <PersonScore />
-    </div>
-  );
+    <>
+      {/* <Header />
+      <Outlet /> */}
+      <RouterProvider router={router} />
+    </>
+  )
 }
-
-export default App;
