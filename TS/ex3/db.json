@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "Getting started with fetch",
+      "description": "How to interact with backend APIs using fetch",
+      "post_id": 1,
+      "id": "dce7"
+    },
+    {
+      "title": "Getting started with useEffect",
+      "description": "How to use React's useEffect hook for interacting with backend APIs",
+      "post_id": 2,
+      "id": "fbe1"
+    }
+  ]
+}

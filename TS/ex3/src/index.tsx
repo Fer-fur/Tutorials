@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import REUSABLE_COMPONENT_APP from './REUSABLE_COMPONENTS_EX/REUSABLE_COMPONENT_APP';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <REUSABLE_COMPONENT_APP />
   </React.StrictMode>
 );
 
