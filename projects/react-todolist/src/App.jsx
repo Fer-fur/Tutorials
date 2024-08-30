@@ -19,11 +19,6 @@ function App() {
     setTodos(newTodoList);
   }
 
-  function handleEditTodo ( index )
-  {
-
-  }
-
   return (
     <>
       <TodoInput handleAddTodos={handleAddTodos}/>
