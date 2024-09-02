@@ -1,10 +1,10 @@
-import { FaqMain } from "./faqAccordion/faqMain"
+import { ImgCarMain } from "./imgCarousel/ImgCarMain"
 
 function App() {
 
   return (
     <main>
-      <FaqMain />
+      <ImgCarMain />
     </main>
   )
 }
